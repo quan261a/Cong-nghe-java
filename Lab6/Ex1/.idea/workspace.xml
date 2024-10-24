@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb09363-f7a3-460f-a379-a031f50c8144" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Lab5/src/webapp/WEB-INF/lib/mssql-jdbc_auth-12.8.1.x64.dll" beforeDir="false" />
-    </list>
+    <list default="true" id="fcb09363-f7a3-460f-a379-a031f50c8144" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +49,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/asus/IdeaProjects/Lab6/Ex1",
+    "last_opened_file_path": "C:/Users/asus/IdeaProjects/Lab6/Ex2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +94,7 @@
       <workItem from="1729692365643" duration="45000" />
       <workItem from="1729692517981" duration="35000" />
       <workItem from="1729692590349" duration="69000" />
+      <workItem from="1729751001221" duration="1321000" />
     </task>
     <servers />
   </component>

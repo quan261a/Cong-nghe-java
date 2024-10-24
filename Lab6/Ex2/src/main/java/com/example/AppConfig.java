@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AppConfig {
 
-    // Bean đầu tiên sử dụng phương thức setter
     @Bean
     @Scope("prototype")
     public Product product1() {
