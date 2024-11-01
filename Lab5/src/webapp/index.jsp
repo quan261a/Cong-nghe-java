@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,13 +19,13 @@
             <h3>Quản lý sản phẩm</h3>
         </div>
         <div class="col-md-6 text-right">
-            Xin chào <span class="text-danger">Username</span> | <a href="logout">Logout</a>
+            Xin chào <span class="text-danger">${sessionScope.user.username}</span> | <a href="${pageContext.request.contextPath}/logout">Logout</a>
         </div>
     </div>
     <div class="row rounded border p-3">
         <div class="col-md-4">
             <h4 class="text-success">Thêm sản phẩm mới</h4>
-            <form class="mt-3" method="post" action="addProduct" enctype="multipart/form-data">
+            <form class="mt-3" method="post" action="products" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="product-name">Tên sản phẩm</label>
                     <input class="form-control" type="text" placeholder="Nhập tên sản phẩm" id="product-name" name="name" required>
@@ -37,10 +38,9 @@
                     <button type="submit" class="btn btn-success mr-2">Thêm sản phẩm</button>
                 </div>
 
-                <!-- Hiển thị thông báo lỗi nếu có -->
                 <c:if test="${not empty errorMessage}">
                     <div class="alert alert-danger">
-                        ${errorMessage}
+                            ${errorMessage}
                     </div>
                 </c:if>
             </form>
@@ -58,35 +58,21 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><a href="#">Macbook Air M1</a></td>
-                    <td>$1,100</td>
-                    <td>
-                        <a href="#">Chỉnh sửa</a> |
-                        <a href="#">Xóa</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><a href="#">Macbook Pro 2020</a></td>
-                    <td>$2,400</td>
-                    <td>
-                        <a href="#">Chỉnh sửa</a> |
-                        <a href="#">Xóa</a>
-                    </td>
-                </tr>
+                <c:forEach var="product" items="${productList}" varStatus="status">
+                    <tr>
+                        <td>${status.index + 1}</td>
+                        <td>${product.name}</td>
+                        <td>${product.price}</td>
+                        <td>
+                            <a href="editProduct?id=${product.id}">Chỉnh sửa</a> |
+                            <a href="deleteProduct?id=${product.id}" onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?');">Xóa</a>
+                        </td>
+                    </tr>
+                </c:forEach>
                 </tbody>
             </table>
         </div>
     </div>
 </div>
-<script>
-    // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function() {
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
-</script>
 </body>
 </html>

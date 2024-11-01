@@ -9,7 +9,6 @@ public class App {
         TextEditor editor = context.getBean(TextEditor.class);
         editor.input("Hello, Spring!");
         editor.save("spring", "This is content.");
-
         context.close();
     }
 }

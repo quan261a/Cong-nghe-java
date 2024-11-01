@@ -4,9 +4,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3307/mydatabase"; // Thay đổi 'mydatabase' thành tên cơ sở dữ liệu của bạn
-    private static final String USER = "root"; // Tài khoản MySQL, mặc định là 'root'
-    private static final String PASSWORD = ""; // Mật khẩu MySQL, mặc định là trống với XAMPP
+    private static final String URL = "jdbc:mysql://localhost:3307/lab5";
+    private static final String USER = "root";
+    private static final String PASSWORD = "";
 
     public static Connection getConnection() throws SQLException {
         try {

@@ -5,17 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c0f4075-7e79-49a0-aa03-6dff3fd2f5f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Ex1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex1/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex1/src/main/java/com/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex1/src/main/resources/appConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex1/src/main/resources/appConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex2/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex2/src/main/java/com/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex2/src/main/java/com/example/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex2/src/main/java/com/example/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex3/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex3/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex3/src/main/java/com/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex4/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex4/src/main/java/com/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +48,9 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/asus/IdeaProjects/Lab6/Ex5",
+    "last_opened_file_path": "C:/Users/asus/IdeaProjects/Lab6/Ex3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,6 +78,8 @@
       <workItem from="1729693578091" duration="573000" />
       <workItem from="1729750974791" duration="23000" />
       <workItem from="1729754149940" duration="28000" />
+      <workItem from="1729754555250" duration="316000" />
+      <workItem from="1729754947157" duration="228000" />
     </task>
     <servers />
   </component>

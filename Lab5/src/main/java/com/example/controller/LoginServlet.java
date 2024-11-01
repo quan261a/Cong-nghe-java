@@ -50,7 +50,7 @@ public class LoginServlet extends HttpServlet {
                         response.addCookie(usernameCookie);
                     }
 
-                    response.sendRedirect("index.jsp");
+                    response.sendRedirect("products");
                 } else {
                     request.setAttribute("errorMessage", "Sai tên đăng nhập hoặc mật khẩu.");
                     request.getRequestDispatcher("login.jsp").forward(request, response);

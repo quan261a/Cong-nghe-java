@@ -22,7 +22,6 @@ public class Product {
         this.price = price;
     }
 
-    // Getter và Setter
     public int getId() {
         return id;
     }
