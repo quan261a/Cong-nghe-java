@@ -17,37 +17,37 @@ public class EmployeeController {
     @GetMapping
     public String listEmployees(Model model) {
         model.addAttribute("employees", employeeService.getAllEmployees());
-        return "index"; // hiển thị danh sách nhân viên
+        return "index";
     }
 
     @GetMapping("/add")
     public String showAddForm(Model model) {
         model.addAttribute("employee", new Employee());
-        return "add"; // hiển thị form thêm nhân viên
+        return "add";
     }
 
     @PostMapping("/add")
     public String addEmployee(@ModelAttribute Employee employee) {
         employeeService.saveEmployee(employee);
-        return "redirect:/employees"; // sau khi thêm xong, chuyển hướng về danh sách nhân viên
+        return "redirect:/employees";
     }
 
     @GetMapping("/edit/{id}")
     public String showEditForm(@PathVariable("id") Long id, Model model) {
         model.addAttribute("employee", employeeService.getEmployeeById(id).orElseThrow());
-        return "edit"; // hiển thị form chỉnh sửa
+        return "edit";
     }
 
     @PostMapping("/edit/{id}")
     public String editEmployee(@PathVariable("id") Long id, @ModelAttribute Employee employee) {
         employee.setId(id);
         employeeService.saveEmployee(employee);
-        return "redirect:/employees"; // sau khi sửa xong, chuyển hướng về danh sách nhân viên
+        return "redirect:/employees";
     }
 
     @PostMapping("/delete/{id}")
     public String deleteEmployee(@PathVariable("id") Long id) {
         employeeService.deleteEmployee(id);
-        return "redirect:/employees"; // sau khi xóa xong, chuyển hướng về danh sách nhân viên
+        return "redirect:/employees";
     }
 }

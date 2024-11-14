@@ -19,7 +19,7 @@ public class Employee {
     private Long id;
 
     private String name;
-    private String position;
     private String email;
-    private double salary;
+    private String address;
+    private String phone;
 }
